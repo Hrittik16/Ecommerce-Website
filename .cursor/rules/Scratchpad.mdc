@@ -1,0 +1,295 @@
+---
+description: Plans for executing the project
+globs: 
+alwaysApply: false
+---
+# E-commerce Website Development Plan
+
+## Project Setup
+[X] 1. Initialize Next.js 15 project with TypeScript
+    - [X] Use `create-next-app` with TypeScript template
+    - [X] Configure ESLint and Prettier
+    - [X] Set up project structure
+
+[X] 2. Install and configure core dependencies
+    - [X] Shadcn UI for component library (initialized)
+    - [X] Add essential shadcn components:
+      - [X] Button
+      - [X] Card
+      - [X] Form
+      - [X] Input
+      - [X] Select
+      - [X] Dialog
+      - [X] Dropdown Menu
+      - [X] Table
+    - [X] Lucide for icons
+    - [X] Zod for validation
+    - [X] Zustand for state management
+    - [X] Recharts for analytics
+    - [X] Resend for email
+    - [X] Uploadthing for file uploads
+    - [X] Prisma for database ORM
+      - [X] Install Prisma
+      - [X] Initialize Prisma
+      - [X] Create database schema
+      - [X] Configure Vercel Neon database connection
+      - [X] Run migrations on Vercel Neon database
+    - [X] next-auth@beta for authentication
+      - [X] Install next-auth
+      - [X] Configure auth providers
+      - [X] Set up Prisma adapter
+      - [X] Create auth API routes
+    - [ ] PayPal SDK for payments
+
+[X] 3. Database Setup
+    - [X] Set up PostgreSQL database
+    - [X] Configure Prisma schema
+    - [X] Create initial migrations
+    - [X] Configure Vercel Neon database:
+      - [X] Add database connection string to .env
+      - [X] Run migrations on Vercel Neon
+      - [X] Verify database connection
+    - [X] Set up database models for:
+      - [X] Users
+      - [X] Products
+      - [X] Categories
+      - [X] Orders
+      - [X] Reviews
+      - [X] Cart
+      - [X] Wishlist
+      - [X] Addresses
+      - [X] Payments
+
+## Core Features Implementation
+
+### Authentication & Authorization
+[X] 1. Implement next-auth@beta
+    - [X] Set up authentication providers (Google, Email)
+    - [X] Create authentication UI:
+      - [X] Login form
+      - [X] Registration form
+      - [X] Password reset form
+      - [X] OAuth buttons (Google)
+    - [X] Create protected routes
+    - [X] Implement role-based access control (Admin, Customer)
+    - [X] Add user profile management
+
+### Product Management
+[ ] 1. Create product-related features
+    - [ ] Product listing with filters and search
+    - [ ] Product details page
+    - [ ] Product categories and subcategories
+    - [ ] Product reviews and ratings
+    - [ ] Product image gallery with Uploadthing
+    - [ ] Stock management
+
+### Shopping Experience
+[ ] 1. Implement shopping features
+    - [ ] Shopping cart functionality
+    - [ ] Wishlist
+    - [ ] Checkout process
+    - [ ] Address management
+    - [ ] Order tracking
+    - [ ] Payment integration with PayPal
+
+### Admin Dashboard
+[ ] 1. Create admin interface
+    - [ ] Dashboard overview with Recharts
+    - [ ] Product management
+    - [ ] Order management
+    - [ ] User management
+    - [ ] Inventory management
+    - [ ] Sales analytics
+    - [ ] Email notifications with Resend
+
+## Frontend Development
+
+### UI Components
+[ ] 1. Build reusable components using Shadcn
+    - [ ] Navigation components
+    - [ ] Product cards
+    - [ ] Forms and inputs
+    - [ ] Modals and dialogs
+    - [ ] Tables and data grids
+    - [ ] Loading states
+    - [ ] Error boundaries
+
+### Pages
+[ ] 1. Create main pages
+    - [ ] Home page
+    - [ ] Product listing
+    - [ ] Product details
+    - [ ] Cart
+    - [ ] Checkout
+    - [ ] User profile
+    - [ ] Order history
+    - [ ] Admin dashboard
+    - [ ] Analytics pages
+
+## Backend Development
+
+### API Routes
+[ ] 1. Implement API endpoints
+    - [ ] Product CRUD operations
+    - [ ] User management
+    - [ ] Order processing
+    - [ ] Payment handling
+    - [ ] File uploads
+    - [ ] Analytics data
+
+### State Management
+[ ] 1. Set up Zustand stores
+    - [ ] Cart store
+    - [ ] User store
+    - [ ] Product store
+    - [ ] Order store
+    - [ ] UI state store
+
+## Testing & Deployment
+[ ] 1. Implement testing
+    - [ ] Unit tests
+    - [ ] Integration tests
+    - [ ] E2E tests
+    - [ ] Performance testing
+
+[ ] 2. Deployment preparation
+    - [ ] Environment configuration
+    - [ ] Build optimization
+    - [ ] CI/CD setup
+    - [ ] Production deployment
+
+## Post-Launch
+[ ] 1. Monitoring and maintenance
+    - [ ] Error tracking
+    - [ ] Performance monitoring
+    - [ ] Security updates
+    - [ ] Regular backups
+    - [ ] Analytics tracking
+
+## Development Phases
+
+### Phase 1: Foundation (Week 1-2)
+[ ] Project setup
+[ ] Database configuration
+[ ] Basic authentication
+[ ] Core UI components
+
+### Phase 2: Core Features (Week 3-4)
+[ ] Product management
+[ ] Shopping cart
+[ ] Basic checkout
+[ ] User profiles
+
+### Phase 3: Admin Dashboard (Week 5-6)
+[ ] Admin interface
+[ ] Analytics
+[ ] Order management
+[ ] Inventory system
+
+### Phase 4: Advanced Features (Week 7-8)
+[ ] Payment integration
+[ ] Email notifications
+[ ] Advanced search
+[ ] Reviews and ratings
+
+### Phase 5: Testing & Deployment (Week 9-10)
+[ ] Testing
+[ ] Performance optimization
+[ ] Deployment
+[ ] Documentation
+
+## Technical Considerations
+[ ] Implement responsive design
+[ ] Ensure accessibility compliance
+[ ] Optimize for SEO
+[ ] Implement caching strategies
+[ ] Set up error handling
+[ ] Configure security measures
+[ ] Implement rate limiting
+[ ] Set up logging and monitoring
+
+## Progress Tracking
+- Last Updated: 2024-03-19
+- Current Phase: Product Management Implementation
+- Next Milestone: Create product listing with filters and search
+- Notes: Authentication system is complete with login, registration, and password reset functionality. Moving on to product management features.
+
+## User Profile Management
+- [X] Create profile page layout
+- [X] Implement personal information editing
+- [X] Add profile picture upload
+- [X] Create address management
+- [X] Implement order history
+- [X] Add account settings
+  - [X] Notification preferences
+  - [X] Account deletion
+
+## Product Management
+- [ ] Create product listing page
+- [ ] Implement product filtering and search
+- [ ] Add product details page
+- [ ] Set up product categories
+- [ ] Implement product reviews
+
+## Shopping Cart
+- [ ] Create cart functionality
+- [ ] Implement cart persistence
+- [ ] Add quantity management
+- [ ] Create checkout process
+
+## Payment Integration
+- [ ] Set up PayPal SDK
+- [ ] Implement payment processing
+- [ ] Add order confirmation
+- [ ] Set up email notifications
+
+## Admin Dashboard
+- [ ] Create admin layout
+- [ ] Implement product management
+- [ ] Add order management
+- [ ] Create user management
+- [ ] Add analytics dashboard
+
+## Notes
+- Database and authentication setup completed
+- User profile management features implemented
+- Next milestone: Product Management implementation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
