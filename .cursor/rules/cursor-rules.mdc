@@ -1,0 +1,18 @@
+---
+description: Instructions to follow while planning tasks
+globs: 
+alwaysApply: false
+---
+## Instructions
+
+- Record fixes for mistakes or corrections to avoid repetition in lessons.mdc
+- Organize thoughts and plan steps before starting a task in the scratchpad.mdc
+- Clear old tasks if necessary.
+- Use todo markers for progress tracking:
+  - `[X]` Completed tasks
+  - `[ ]` Pending tasks
+- Update Scratchpad after completing subtasks.
+- Reflect and plan after milestones for better task management.
+
+
+- Always refer to Scratchpad before planning the next step
